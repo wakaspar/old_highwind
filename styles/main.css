@@ -1,20 +1,22 @@
+/******************/
+/* INDEX.HTML CSS */
+/******************/
+
 body {
-  background-color: #424242;
+  background-color: #1c1c1c;
 }
+
+
+/* Page Header */
 
 .page-header {
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 100%;
-  clear: both;
 }
 
 .nav-hamburger {
-  padding: 35px;
-  float: left;
   color: coral;
-  text-shadow: -3px 3px black;
 }
 
 .header-leaf {
@@ -31,12 +33,41 @@ body {
   color: dodgerblue;
   float: right;
   margin-right: 10px;
-  text-shadow: 3px 3px black;
+  text-shadow: 3px 2px black;
 }
 
-.page-header p {
-  font-family: 'Audiowide', sans-serif;
+#nav-drop {
+  margin-top: 2%;
+  background: #424242;
 }
+
+#nav-drop .divider {
+  background: #1c1c1c;
+}
+
+#nav-drop a {
+  color: #ce23c8;
+}
+
+
+#nav-drop a:hover {
+  background: #1c1c1c;
+}
+
+
+/* Page Layout */
+
+.btn {
+  color: coral;
+  background: #1c1c1c;
+  text-decoration: none;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  background: #777777;
+}
+
+
 
 .parallax-container {
   min-height: 100vh;
@@ -47,11 +78,46 @@ body {
   width: 100%;
 }
 
-.section {
-  background-color: #424242;
+.sub-head {
+  font-family: 'Audiowide', sans-serif;
+  text-shadow: 3px 2px grey;
 }
 
-.my-footer {
-  text-align: center;
+.panel {
+  margin-top: 30vh;
+  max-width: 75%;
+  padding: 0px 10px;
+  background: rgba(66, 66, 66, .88);
+  border-radius: 3px;
+  clear: both;
+}
+
+.back-link {
+  float: right;
+  z-index: 1;
+}
+
+
+/* footer */
+
+.page-footer {
+  background: #000000;
   color: navajowhite;
+}
+
+.dev-info {
+  font-weight: 100;
+  margin-left: 10px;
+  line-height: 0;
+  font-size: 1.25em;
+}
+
+.footer-icons {
+  text-align: center;
+}
+
+.footer-icons i {
+  margin: 0px 10px;
+  margin-bottom: 15px;
+  display: inline-flex;
 }
