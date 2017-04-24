@@ -12,61 +12,35 @@ body {
 .page-header {
   position: fixed;
   top: 0px;
-  right: 0px;
-}
-
-.nav-hamburger {
-  color: coral;
+  right: 25px;
 }
 
 .header-leaf {
   color: #51ad51;
 }
 
-.kaspar {
+.header-leaf:hover {
+  color: darkgreen;
+}
+
+.header-w {
+  padding-left: 3px;
+  color: dodgerblue;
+}
+
+.header-k {
   color: blue;
 }
 
 .page-header h1 {
-  font-family: 'Audiowide', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   font-size: 2.75em;
-  color: dodgerblue;
   float: right;
-  margin-right: 10px;
   text-shadow: 3px 2px black;
-}
-
-#nav-drop {
-  margin-top: 2%;
-  background: #424242;
-}
-
-#nav-drop .divider {
-  background: #1c1c1c;
-}
-
-#nav-drop a {
-  color: #ce23c8;
-}
-
-
-#nav-drop a:hover {
-  background: #1c1c1c;
 }
 
 
 /* Page Layout */
-
-.btn {
-  color: coral;
-  background: #1c1c1c;
-  text-decoration: none;
-}
-
-.btn:hover, .btn:active, .btn:focus {
-  background: #777777;
-}
-
 
 
 .parallax-container {
@@ -80,44 +54,87 @@ body {
 
 .sub-head {
   font-family: 'Audiowide', sans-serif;
+  font-size: 2.75em;
   text-shadow: 3px 2px grey;
 }
 
 .panel {
-  margin-top: 30vh;
-  max-width: 75%;
+  margin-top: 20vh;
   padding: 0px 10px;
   background: rgba(66, 66, 66, .88);
   border-radius: 3px;
-  clear: both;
+  width: 60%;
+}
+
+
+.btn:hover, .btn:active, .btn:focus {
+  color: black;
+  background: #777777;
+}
+
+.btn {
+  color: coral;
+  background: #1c1c1c;
+  text-decoration: none;
 }
 
 .back-link {
+  margin: auto;
   float: right;
   z-index: 1;
 }
 
-
 /* footer */
 
 .page-footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
   background: #000000;
-  color: navajowhite;
 }
 
 .dev-info {
+  color: navajowhite;
   font-weight: 100;
   margin-left: 10px;
   line-height: 0;
   font-size: 1.25em;
 }
 
+.navigator a {
+  color: coral;
+}
+
+.navigator {
+  font-weight: 100;
+  float: right;
+  line-height: 0;
+  margin-top: -15px;
+  margin-right: 25px;
+  text-align: right;
+  font-size: 1em;
+  line-height: 0;
+}
+
+.navigator a:hover, .navigator a:hover {
+  color: navajowhite;
+}
+
+.every-other-line {
+  color: coral;
+}
+
 .footer-icons {
   text-align: center;
 }
 
+
 .footer-icons i {
-  margin: 0px 10px;
-  margin-bottom: 15px;
-  display: inline-flex;
+  color: navajowhite;
+  padding: 8px;
+}
+
+.footer-icons i:hover {
+  color: coral;
 }
