@@ -73,8 +73,8 @@ body {
 }
 
 .panel {
-  margin-top: 20vh;
-  background: rgba(66, 66, 66, .94);
+  margin-top: 15vh;
+  background: rgba(66, 66, 66, .88);
   border-radius: 3px;
   padding: .5em 1.5em;
   width: 73%;
@@ -118,9 +118,14 @@ hr {
   max-width: 200px;
 }
 
+.project-panel {
+  height: 200%;
+}
+
 .ye-old-fgw {
   text-decoration: none;
-  color: coral;
+  font-weight: lighter;
+  color: 	#A9A9A9;
 }
 
 .back-link, .next-link, .prev-link {
@@ -291,7 +296,7 @@ hr {
 }
 
 
-@media only screen and (orientation : portrait) {
+/*@media only screen and (orientation : portrait) {
    .parallax-container {
                          max-height : 50vh;
                          overflow: hidden;
@@ -305,4 +310,4 @@ hr {
                          min-width: 100%;
                        }
  .panel                { margin-top: 5vh; }
-}
+}*/
