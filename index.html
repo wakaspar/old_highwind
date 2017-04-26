@@ -29,46 +29,98 @@
 
   <body>
 
-    <!-- Page Header -->
+    <!-- Page Header - fixed -->
     <div class="page-header">
       <h1> <i class="fa fa-leaf header-leaf" aria-hidden="true"></i><span class="header-w">w</span><span class="header-k">k</span> </h1>
     </div>
 
-    <!-- Container One -->
+    <!-- Container One - Landing Page -->
     <div  id="page-one" class="parallax-container scrollspy">
       <div class="parallax">
         <img class="first-bg" src="./styles/imgs/bg1.jpg" alt="bg1">
       </div>
     </div> <!-- end 1 -->
 
+    <div class="section">
+    </div>
 
-    <div class="section"></div>
-
-
-    <!-- Container Two -->
+    <!-- Container Two - Projects -->
     <div class="parallax-container">
       <div class="panel container">
         <h2 class="sub-head">Projects</h2>
-        <div id="page-two" class="scrollspy">
-          <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="page-two" class="scrollspy clearfix">
+          <div class="project-one">
+            <img src="./styles/imgs/fgw.png" alt="p01">
+            <h5>FreeGoldWatch</h5>
+            <p>A prototype website for my favorite pinball arcade, tracks current pinball machines at the shop and aggregates social data.  Attempts to maintain the design asethetic of the business's current <a class="ye-old-fgw" href="http://www.freegoldwatch.com">website</a>. Built in Rails.  Check the repo for more info!</p>
+            <hr class="clearfix">
+            <a class="btn repo-link" href="http://www.github.com/wakaspar/FreeGoldWatch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+            <a class="btn deploy-link" href="http://freegoldwatch.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
+          </div>
+          <div class="project-two">
+            <img src="./styles/imgs/fgs.png" alt="p02">
+            <h5>FreeGoldScores</h5>
+            <p>A simple dashboard that allows users to enter their high scores at any pinball machine currently on the floor at FreeGoldWatch, through interactions with the PinballMap.com API.  Built with AngularJS and Express.  Currently wresteling with an auth issue.  Check out the repo for more info!</p>
+            <hr class="clearfix">
+            <a class="btn repo-link" href="http://www.github.com/wakaspar/freegoldscores" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+            <a class="btn deploy-link" href="http://freegoldscores.bitballoon.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
+          </div>
+          <div class="project-three">
+            <img src="./styles/imgs/weH.png" alt="p03">
+            <h5>WeHuddle</h5>
+            <p>A real-time chat application built with a three-developer team, this project was an attempt at a Slack clone.  Built in Rails 5 using Action Cable.  I plan on rebuilding the front-end soon, to make it cat-themed (not kidding).  Check out the repo for more info!</p>
+            <hr class="clearfix">
+            <a class="btn repo-link" href="http://www.github.com/ychoy/wehuddle" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+            <a class="btn deploy-link" href="http://wehuddle.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
+          </div>
         </div>
-        <a class="btn back-link" href="#page-one"><i class="fa fa-rebel fa-2x" aria-hidden="true"></i></a>
+        <a class="btn back-link" href="#page-one"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
+        <a class="btn next-link" href="#page-two"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></a>
+        <a class="btn prev-link" href="#page-two"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
       </div>
       <div class="parallax"><img src="./styles/imgs/bg2.jpg" alt="bg2"></div>
     </div> <!-- end 2 -->
 
 
-    <div class="section"></div>
+    <!-- Section Two - Technologies -->
+    <div class="section container">
+      <h4>Familiar Technologies</h4>
+      <p class="flow-text">I'm always interested in learning new tech.  Here's what I'm currently proficient in:</p>
+      <div class="stack-list">
+        <div class="languages">
+          <i class="fa fa-code fa-4x"></i>
+          <p>JavaScript, Ruby</p>
+        </div>
+        <div class="client">
+          <i class="fa fa-laptop fa-4x"></i>
+          <p>HTML/CSS, jQuery, Materialize, SemanticUI</p>
+        </div>
+        <div class="server">
+          <i class="fa fa-server fa-4x"></i>
+          <p>Node.js, Express, AngularJS, RubyOnRails</p>
+        </div>
+        <div class="database">
+          <i class="fa fa-database fa-4x"></i>
+          <p>MongoDB, PostgreSQL</p>
+        </div>
+      </div>
+    </div>
 
 
-    <!-- Container Three -->
+    <!-- Container Three - Artwork -->
     <div class="parallax-container">
       <div class="panel container">
         <h2 class="sub-head">Artwork</h2>
         <div id="page-three" class="scrollspy">
-          <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="flow-text">I love art and I am an avid illustrator.  Here are some of my doodles:</p>
+          <div class="art-panel">
+            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art1_thumb.jpeg"></a>
+            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art2_thumb.jpeg"></a>
+            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art3_thumb.jpeg"></a>
+            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art4_thumb.jpeg"></a>
+          </div>
         </div>
-        <a class="btn back-link" href="#page-two"><i class="fa fa-rebel fa-2x" aria-hidden="true"></i></a>
+        <a class="btn back-link" href="#page-two"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
       </div>
       <div class="parallax"><img src="./styles/imgs/bg5.jpg" alt="bg4"></div>
     </div> <!-- end 3 -->
@@ -77,67 +129,79 @@
     <div class="section"></div>
 
 
-    <!-- Container Four -->
+    <!-- Container Four - Gardening -->
     <div class="parallax-container">
       <div class="panel container">
         <h2 class="sub-head">Gardening</h2>
         <div id="page-four" class="scrollspy">
-          <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="flow-text">Before I started learning coding, I did some work in agriculture.  Here are some of the gardens that I worked on:</p>
         </div>
-        <a class="btn back-link" href="#page-three"><i class="fa fa-rebel fa-2x" aria-hidden="true"></i></a>
+        <a class="btn back-link" href="#page-three"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
       </div>
       <div class="parallax"><img src="./styles/imgs/bg6.jpg" alt="bg5"></div>
     </div> <!-- end 4 -->
 
 
-    <div class="section"></div>
-
+    <!-- Contact Section -->
+    <div  id="page-five" class="section container scrollspy">
+      <h4>Contact Me</h4>
+      <p class="flow-text">I love meeting new people, feel free to...</p>
+      <div class="contact-list">
+        <a class="contact-link" href="mailto:wakaspar@gmail.com">
+          <i class="fa fa-envelope fa-4x"></i>
+          <p>hit my inbox</p>
+        </a>
+        <a class="contact-link" href="https://drive.google.com/open?id=0B4_2t9JACINLZkhtaWtET2p6RUU" target="_blank">
+          <i class="fa fa-file-text fa-4x"></i>
+          <p>dl my resume</p>
+        </a>
+        <a class="contact-link" href="https://www.github.com/wakaspar" target="_blank">
+          <i class="fa fa-github-square fa-4x"></i>
+          <p>lurk my github</p>
+        </a>
+      </div>
+    </div>
 
     <!-- Container Five -->
     <div class="parallax-container">
-
-      <div class="panel container scrollspy">
-        <h2 class="sub-head">Reach Out</h2>
-        <div id="page-five" class="scrollspy">
-          <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <a class="btn back-link" href="#page-four"><i class="fa fa-rebel fa-2x" aria-hidden="true"></i></a>
-      </div>
-
       <div class="parallax">
           <img src="./styles/imgs/bg4.jpg" alt="bg6">
       </div>
-
-    </div> <!-- end 5 -->
+    </div>
 
     <!-- Footer -->
     <div class="page-footer">
 
-      <div class="navigator">
-        <ul class="table-of-contents">
-          <li><a href="#page-two">Code</a></li>
-          <li><a class="activator" href="#page-three">Create</a></li>
-          <li><a href="#page-four">Cultivate</a></li>
-          <li><a href="#page-five">Contact</a></li>
-        </ul>
-      </div>
+      <div class="footer-info">
 
-      <div class="dev-info">
-        <p>Will Kaspar</p>
-        <p class="every-other-line">Full Stack Web Developer</p>
-        <p>San Francisco, CA</p>
-        <p class="every-other-line">MMXVII</p>
-      </div>
+        <div class="navigator">
+          <ul class="table-of-contents">
+            <li><a href="#page-two">Code</a></li>
+            <li><a class="activator" href="#page-three">Create</a></li>
+            <li><a href="#page-four">Cultivate</a></li>
+            <li><a href="#page-five">Contact</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-icons">
-        <a href="mailto:wakaspar@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.github.com/wakaspar"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/wakaspar/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/willkaspar"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/kasparthefriendlyghost/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <div class="dev-info">
+          <p>Will Kaspar</p>
+          <p class="every-other-line">Full Stack Web Developer</p>
+          <p>San Francisco, CA</p>
+          <p class="every-other-line">MMXVII</p>
+        </div>
+
+        <div class="footer-icons hide-on-small-only">
+          <a href="mailto:wakaspar@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.github.com/wakaspar"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/wakaspar/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/willkaspar"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/kasparthefriendlyghost/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
       </div>
 
     </div> <!-- ends Footer -->
+
+
 
   </body>
 </html>
