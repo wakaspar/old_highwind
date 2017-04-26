@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>howdy!</title>
+    <title>Will Kaspar</title>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -29,62 +29,23 @@
 
   <body>
 
-    <!-- Page Header - fixed -->
+    <!-- Page Header - position fixed -->
     <div class="page-header">
       <h1> <i class="fa fa-leaf header-leaf" aria-hidden="true"></i><span class="header-w">w</span><span class="header-k">k</span> </h1>
     </div>
 
+
     <!-- Container One - Landing Page -->
     <div  id="page-one" class="parallax-container scrollspy">
       <div class="parallax">
-        <img class="first-bg" src="./styles/imgs/bg1.jpg" alt="bg1">
+        <img class="page-bg first-bg" src="./styles/imgs/bg1.jpg" alt="bg1">
       </div>
-    </div> <!-- end 1 -->
-
-    <div class="section">
     </div>
 
-    <!-- Container Two - Projects -->
-    <div class="parallax-container">
-      <div class="panel container">
-        <h2 class="sub-head">Projects</h2>
-        <div id="page-two" class="scrollspy clearfix">
-          <div class="project-one">
-            <img src="./styles/imgs/fgw.png" alt="p01">
-            <h5>FreeGoldWatch</h5>
-            <p>A prototype website for my favorite pinball arcade, tracks current pinball machines at the shop and aggregates social data.  Attempts to maintain the design asethetic of the business's current <a class="ye-old-fgw" href="http://www.freegoldwatch.com">website</a>. Built in Rails.  Check the repo for more info!</p>
-            <hr class="clearfix">
-            <a class="btn repo-link" href="http://www.github.com/wakaspar/FreeGoldWatch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
-            <a class="btn deploy-link" href="http://freegoldwatch.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
-          </div>
-          <div class="project-two">
-            <img src="./styles/imgs/fgs.png" alt="p02">
-            <h5>FreeGoldScores</h5>
-            <p>A simple dashboard that allows users to enter their high scores at any pinball machine currently on the floor at FreeGoldWatch, through interactions with the PinballMap.com API.  Built with AngularJS and Express.  Currently wresteling with an auth issue.  Check out the repo for more info!</p>
-            <hr class="clearfix">
-            <a class="btn repo-link" href="http://www.github.com/wakaspar/freegoldscores" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
-            <a class="btn deploy-link" href="http://freegoldscores.bitballoon.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
-          </div>
-          <div class="project-three">
-            <img src="./styles/imgs/weH.png" alt="p03">
-            <h5>WeHuddle</h5>
-            <p>A real-time chat application built with a three-developer team, this project was an attempt at a Slack clone.  Built in Rails 5 using Action Cable.  I plan on rebuilding the front-end soon, to make it cat-themed (not kidding).  Check out the repo for more info!</p>
-            <hr class="clearfix">
-            <a class="btn repo-link" href="http://www.github.com/ychoy/wehuddle" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
-            <a class="btn deploy-link" href="http://wehuddle.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
-          </div>
-        </div>
-        <a class="btn back-link" href="#page-one"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
-        <a class="btn next-link" href="#page-two"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></a>
-        <a class="btn prev-link" href="#page-two"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
-      </div>
-      <div class="parallax"><img src="./styles/imgs/bg2.jpg" alt="bg2"></div>
-    </div> <!-- end 2 -->
 
-
-    <!-- Section Two - Technologies -->
-    <div class="section container">
-      <h4>Familiar Technologies</h4>
+    <!-- Section One - Technologies -->
+    <div id="section-one" class="section container scrollspy">
+      <h4>Technologies</h4>
       <p class="flow-text">I'm always interested in learning new tech.  Here's what I'm currently proficient in:</p>
       <div class="stack-list">
         <div class="languages">
@@ -107,43 +68,94 @@
     </div>
 
 
-    <!-- Container Three - Artwork -->
+    <!-- Container Two - Projects -->
     <div class="parallax-container">
       <div class="panel container">
-        <h2 class="sub-head">Artwork</h2>
-        <div id="page-three" class="scrollspy">
-          <p class="flow-text">I love art and I am an avid illustrator.  Here are some of my doodles:</p>
-          <div class="art-panel">
-            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art1_thumb.jpeg"></a>
-            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art2_thumb.jpeg"></a>
-            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art3_thumb.jpeg"></a>
-            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art4_thumb.jpeg"></a>
+        <h4 class="sub-head">Projects</h4>
+        <div id="page-two" class="scrollspy clearfix">
+          <div class="project-one">
+            <img src="./styles/imgs/fgw.png" alt="p01">
+            <h5>FreeGoldWatch</h5>
+            <p>A prototype website for my favorite pinball arcade, tracks current pinball machines at the shop and aggregates social data.  Attempts to maintain the design asethetic of the business's current <a class="ye-old-fgw" href="http://www.freegoldwatch.com" target="_blank">website</a>. Built in Rails.  Check the repo for more info!</p>
+            <hr class="clearfix">
+            <a class="btn repo-link" href="http://www.github.com/wakaspar/FreeGoldWatch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+            <a class="btn deploy-link" href="http://freegoldwatch.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
+          </div>
+          <div class="project-two">
+            <img src="./styles/imgs/fgs.png" alt="p02">
+            <h5>FreeGoldScores</h5>
+            <p>A simple dashboard that allows users to enter their high scores at any pinball machine currently on the floor at FreeGoldWatch, through interactions with the PinballMap.com API.  Built with AngularJS and Express.  Currently wresteling with an auth issue.  Check out the repo for more info!</p>
+            <hr class="clearfix">
+            <a class="btn repo-link" href="http://www.github.com/wakaspar/freegoldscores" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+            <a class="btn deploy-link" href="http://freegoldscores.bitballoon.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
+          </div>
+          <div class="project-three">
+            <img src="./styles/imgs/weH.png" alt="p03">
+            <h5>WeHuddle</h5>
+            <p>A real-time chat application built with a three-developer team, this project was an attempt at a Slack clone.  Built in Rails 5 using Action Cable.  I plan on rebuilding the front-end soon, to make it cat-themed (not kidding).  Check out the repo for more info!</p>
+            <hr class="clearfix">
+            <a class="btn repo-link" href="http://www.github.com/ychoy/wehuddle" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+            <a class="btn deploy-link" href="http://wehuddle.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> deployment</a>
           </div>
         </div>
-        <a class="btn back-link" href="#page-two"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
+        <a class="btn back-link" href="#section-one"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
+        <a class="btn next-link" href="#page-two"><i class="fa fa-forward fa-2x" aria-hidden="true"></i></a>
+        <a class="btn prev-link" href="#page-two"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
       </div>
-      <div class="parallax"><img src="./styles/imgs/bg5.jpg" alt="bg4"></div>
-    </div> <!-- end 3 -->
+      <div class="parallax artwork-pattern"></div>
+    </div>
 
 
+    <!-- Section Two - empty -->
     <div class="section"></div>
 
 
-    <!-- Container Four - Gardening -->
+    <!-- Container Three - Gardening -->
     <div class="parallax-container">
       <div class="panel container">
-        <h2 class="sub-head">Gardening</h2>
+        <h4 class="sub-head">Gardening</h4>
+        <div id="page-three" class="scrollspy">
+          <p class="flow-text">Before I started learning to code, I worked in agriculture.</p>
+          <div class="farm-panel">
+            <a href="./styles/imgs/garden1.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden1_thumb.jpeg"></a>
+            <a href="./styles/imgs/garden2.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden2_thumb.jpeg"></a>
+            <a href="./styles/imgs/garden3.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden3_thumb.jpeg"></a>
+            <a href="./styles/imgs/garden4.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden4_thumb.jpeg"></a>
+          </div>
+          <p>(I love nature)</p>
+        </div>
+        <a class="btn back-link" href="#page-two"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div class="parallax"><img class="page-bg" src="./styles/imgs/bg2.jpg" alt="bg2"></div>
+    </div>
+
+
+    <!-- Section Three - empty -->
+    <div class="section"></div>
+
+    <!-- Container Four - Artwork -->
+    <div class="parallax-container">
+      <div class="panel container">
+        <h4 class="sub-head">Artwork</h4>
         <div id="page-four" class="scrollspy">
-          <p class="flow-text">Before I started learning coding, I did some work in agriculture.  Here are some of the gardens that I worked on:</p>
+          <p class="flow-text">I have an art history degree and I'm an avid illustrator.  Here are some doodles:</p>
+          <div class="art-panel">
+            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art1_thumb.jpeg"></a>
+            <a href="./styles/imgs/art2.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art2_thumb.jpeg"></a>
+            <a href="./styles/imgs/art3.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art3_thumb.jpeg"></a>
+            <a href="./styles/imgs/art4.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art4_thumb.jpeg"></a>
+          </div>
+          <p>(I draw a lot of plants)</p>
         </div>
         <a class="btn back-link" href="#page-three"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
       </div>
-      <div class="parallax"><img src="./styles/imgs/bg6.jpg" alt="bg5"></div>
-    </div> <!-- end 4 -->
+      <div class="parallax artwork-pattern"></div>
+    </div>
 
 
-    <!-- Contact Section -->
-    <div  id="page-five" class="section container scrollspy">
+
+    <!-- Section Four - Contact Info -->
+    <div  id="section-four" class="section container scrollspy">
       <h4>Contact Me</h4>
       <p class="flow-text">I love meeting new people, feel free to...</p>
       <div class="contact-list">
@@ -159,37 +171,39 @@
           <i class="fa fa-github-square fa-4x"></i>
           <p>lurk my github</p>
         </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/wakaspar/" target="_blank">
+          <i class="fa fa-linkedin-square fa-4x"></i>
+          <p>connect on linkedin</p>
+        </a>
       </div>
     </div>
 
-    <!-- Container Five -->
+
+    <!-- Container Five - Ending Image -->
     <div class="parallax-container">
       <div class="parallax">
-          <img src="./styles/imgs/bg4.jpg" alt="bg6">
+          <img class="page-bg" src="./styles/imgs/bg3.jpg" alt="bg3">
       </div>
     </div>
 
-    <!-- Footer -->
+
+    <!-- Footer - position fixed -->
     <div class="page-footer">
-
       <div class="footer-info">
-
         <div class="navigator">
           <ul class="table-of-contents">
             <li><a href="#page-two">Code</a></li>
-            <li><a class="activator" href="#page-three">Create</a></li>
-            <li><a href="#page-four">Cultivate</a></li>
-            <li><a href="#page-five">Contact</a></li>
+            <li><a href="#page-three">Cultivate</a></li>
+            <li><a class="activator" href="#page-four">Create</a></li>
+            <li><a href="#section-four">Contact</a></li>
           </ul>
         </div>
-
         <div class="dev-info">
           <p>Will Kaspar</p>
           <p class="every-other-line">Full Stack Web Developer</p>
           <p>San Francisco, CA</p>
           <p class="every-other-line">MMXVII</p>
         </div>
-
         <div class="footer-icons hide-on-small-only">
           <a href="mailto:wakaspar@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.github.com/wakaspar"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
@@ -198,10 +212,7 @@
           <a href="https://www.instagram.com/kasparthefriendlyghost/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
         </div>
       </div>
-
-    </div> <!-- ends Footer -->
-
-
+    </div>
 
   </body>
 </html>
