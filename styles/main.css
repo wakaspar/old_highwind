@@ -52,6 +52,7 @@ body {
 }
 
 .page-bg {
+  background-attachment: fixed;
   width: 112vh;
   height: 112vh;
   overflow: hidden;
@@ -119,7 +120,7 @@ hr {
 }
 
 .project-panel {
-  height: 200%;
+  height: 220%;
 }
 
 .ye-old-fgw {
