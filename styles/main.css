@@ -13,14 +13,11 @@ body {
   position: fixed;
   top: 0%;
   right: 2%;
+  z-index: 3;
 }
 
 .header-leaf {
   color: #51ad51;
-}
-
-.header-leaf:hover {
-  color: darkgreen;
 }
 
 .header-w {
@@ -45,12 +42,6 @@ body {
   height: 100vh;
 }
 
-.projects-pattern {
-  background: url('./imgs/simple_dashed.png');
-  width: 100%;
-  height: 100%;
-}
-
 .page-bg {
   background-attachment: fixed;
   width: 112vh;
@@ -58,17 +49,28 @@ body {
   overflow: hidden;
 }
 
-.parallax-container .section {
+.parallax-container {
   width: 100%;
 }
 
-.section h4 {
-  font-family: 'Audiowide', sans-serif;
+.sub-head {
+  font-family: 'ChatypeB2.1MediumMedium', sans-serif;
   color: #777777;
   text-shadow: 3px 2px black;
+  text-align: center;
 }
 
-.section .flow-text {
+.sub-head-alt {
+  font-family: 'ChatypeB2.1MediumMedium', sans-serif;;
+  text-shadow: 2px 2px grey;
+}
+
+.flow-text {
+  font-family: 'ChatypeB2.1RegularRegular', sans-serif;
+  margin-left: 5%;
+}
+
+.flow-text {
   text-align: center;
   color: #545454;
 }
@@ -78,79 +80,43 @@ body {
   background: rgba(66, 66, 66, .88);
   border-radius: 3px;
   padding: .5em 1.5em;
-  width: 73%;
+  width: 54%;
 }
 
-.sub-head {
-  font-family: 'Audiowide', sans-serif;
-  text-shadow: 2px 2px grey;
-}
 
 h5 {
   font-weight: bold;
 }
 
 .btn:hover, .btn:active, .btn:focus {
-  color: black;
-  background: #777777;
+  color: #000000;
+  background: #545454;
 }
 
 .btn {
-  color: coral;
+  color: #51ad51;
   background: #1c1c1c;
   text-decoration: none;
+}
+
+.back-link {
+  margin: 2% 1%;
+  float: right;
+  z-index: 1;
 }
 
 .contact-link i:hover {
   color: #777777;
 }
 
-
-/* Projets */
-
-hr {
-  border-color: black;
-}
-
-#page-two img {
-  float:left;
-  display: inline-block;
-  margin: 2%;
-  max-width: 200px;
-}
-
-.project-panel {
-  height: 220%;
-}
-
-.ye-old-fgw {
-  text-decoration: none;
-  font-weight: lighter;
-  color: 	#A9A9A9;
-}
-
-.back-link, .next-link, .prev-link {
+.garden-back-link {
   margin: 2% 1%;
   float: right;
-  z-index: 1;
+  background: #777777;
 }
 
-.deploy-link, .repo-link {
-  margin: 1% 0%;
+.garden-back-link:hover {
 }
-
-.next-link, .prev-link {
-  color: navajowhite;
-}
-
-.deploy-link {
-  color: dodgerblue;
-}
-
-.repo-link {
-  color: #51ad51;
-}
-
 
 /* Technologies */
 
@@ -184,14 +150,54 @@ hr {
   color: navajowhite;
 }
 
-.fa-globe {
-  color: blue;
+
+/* Projets */
+
+hr {
+  border-color: black;
 }
+
+#page-two img {
+  float:left;
+  display: inline-block;
+  margin: 2%;
+  max-width: 200px;
+}
+
+.project-panel {
+  height: 220%;
+  background: #545454;
+  padding: 2%;
+}
+
+.ye-old-fgw {
+  text-decoration: none;
+  font-weight: lighter;
+  color: 	#A9A9A9;
+}
+
+
+.deploy-link, .repo-link {
+  margin: 1% 0%;
+}
+
+.next-link, .prev-link {
+  color: navajowhite;
+}
+
+.deploy-link {
+  color: dodgerblue;
+}
+
+.repo-link {
+  color: #51ad51;
+}
+
 
 /* Gardening & Artwork */
 
 .artwork-pattern {
-  background: url('./imgs/moulin.png');
+  background: black;
   width: 100%;
   height: 100%;
 }
@@ -200,9 +206,11 @@ hr {
   text-align: center;
 }
 
-.artwork, .farm {
-  margin: 2%;
-  max-width: 15%;
+.artwork, .garden-pics {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  margin: 1%;
 }
 
 
@@ -234,6 +242,7 @@ hr {
   color: navajowhite;
 }
 
+
 /* Footer */
 
 .page-footer {
@@ -246,8 +255,8 @@ hr {
 
 .dev-info {
   color: navajowhite;
-  font-weight: 100;
-  margin-left: 10px;
+  margin-left: 2%;
+  font-weight: 200;
   line-height: 0;
   font-size: 1.25em;
 }
@@ -275,8 +284,8 @@ hr {
 }
 
 .footer-icons {
-  position: absolute;
-  left: 41.5%;
+  margin: 0.1% 2%;
+  float: right;
 }
 
 .footer-icons i {
@@ -297,18 +306,35 @@ hr {
 }
 
 
-/*@media only screen and (orientation : portrait) {
-   .parallax-container {
-                         max-height : 50vh;
-                         overflow: hidden;
-                         position: relative;
-                       }
+/* Integrates Chatype font (chatype.com) */
+/* Official Font of my hometown, Chattanooga, TN. */
 
-   .page-bg            {
-                         position: absolute;
-                         margin: auto;
-                         min-height: 100%;
-                         min-width: 100%;
-                       }
- .panel                { margin-top: 5vh; }
-}*/
+@font-face {
+    font-family: 'ChatypeB2.1RegularRegular';
+    src: url('./Chatype/chatypeb2.1regular-webfont.eot');
+    src: url('./Chatype/chatypeb2.1regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Chatype/chatypeb2.1regular-webfont.woff') format('woff'),
+         url('./Chatype/chatypeb2.1regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChatypeB2.1BoldBold';
+    src: url('./Chatype/chatypeb2.1bold-webfont.eot');
+    src: url('./Chatype/chatypeb2.1bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Chatype/chatypeb2.1bold-webfont.woff') format('woff'),
+         url('./Chatype/chatypeb2.1bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChatypeB2.1MediumMedium';
+    src: url('./Chatype/chatypeb2.1medium-webfont.eot');
+    src: url('./Chatype/chatypeb2.1medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./Chatype/chatypeb2.1medium-webfont.woff') format('woff'),
+         url('./Chatype/chatypeb2.1medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

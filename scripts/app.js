@@ -12,7 +12,8 @@ $(document).ready(function(){
 
   $('.parallax').parallax();
   $('.scrollspy').scrollSpy();
-   $('.carousel').carousel();
+  $('.carousel').carousel();
+  $('.modal').modal();
 
   // var projectState = 0;
   // projectSlide(projectState);

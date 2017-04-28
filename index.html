@@ -23,6 +23,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
 
+    <link href="./styles/Chatype/" rel="stylesheet">
+
     <!-- Local CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <!--- " JS -->
@@ -47,8 +49,8 @@
 
 
     <!-- Section One - Technologies -->
-    <div id="section-one" class="section container scrollspy">
-      <h4>Technologies</h4>
+    <div id="section-one" class=" container scrollspy">
+      <h3 class="sub-head">technologies</h3>
       <p class="flow-text">I'm always interested in learning new tech.  Here's what I'm currently proficient in:</p>
       <div class="stack-list">
         <div class="languages">
@@ -57,11 +59,11 @@
         </div>
         <div class="client">
           <i class="fa fa-laptop fa-4x"></i>
-          <p>HTML/CSS, jQuery, Materialize, SemanticUI</p>
+          <p>jQuery, Materialize, SemanticUI</p>
         </div>
         <div class="server">
           <i class="fa fa-server fa-4x"></i>
-          <p>Node.js, Express, AngularJS, RubyOnRails</p>
+          <p>Express, AngularJS, RubyOnRails</p>
         </div>
         <div class="database">
           <i class="fa fa-database fa-4x"></i>
@@ -72,110 +74,71 @@
 
 
     <!-- Container Two - Projects -->
-    <div class="parallax-container project-panel">
-      <div class="panel container">
-        <h4 class="sub-head">Projects</h4>
-        <div id="page-two" class="scrollspy clearfix">
-          <div class="project-one">
-            <img src="./styles/imgs/fgw.png" alt="p01">
-            <h5>FreeGoldWatch</h5>
-            <p>A prototype website for my favorite pinball arcade, tracks current pinball machines at the shop and gathers social data.  Attempts to maintain the design asethetic of <a class="ye-old-fgw" href="http://www.freegoldwatch.com" target="_blank">the business's current website</a>. Built in Rails.  Check out the repo or demo for more info!</p>
-            <a class="btn repo-link" href="http://www.github.com/wakaspar/FreeGoldWatch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
-            <a class="btn deploy-link" href="http://freegoldwatch.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> demo</a>
-            <hr class="clearfix">
-          </div>
-          <div class="project-two">
-            <img src="./styles/imgs/fgs.png" alt="p02">
-            <h5>FreeGoldScores</h5>
-            <p>A simple dashboard that allows users to enter their high scores at any pinball machine currently on the floor at FreeGoldWatch, through interactions with the PinballMap.com API.  Built with AngularJS and Express.  Currently wresteling with an auth issue.  Check out the repo or demo for more info!</p>
-            <a class="btn repo-link" href="http://www.github.com/wakaspar/freegoldscores" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
-            <a class="btn deploy-link" href="http://freegoldscores.bitballoon.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> demo</a>
-            <hr class="clearfix">
-          </div>
-          <div class="project-three">
-            <img src="./styles/imgs/weH.png" alt="p03">
-            <h5>WeHuddle</h5>
-            <p>A real-time chat application built with a three-developer team, this project was an attempt at a Slack clone.  Built in Rails 5 using Action Cable.  I plan on rebuilding the front-end soon to make it cat-themed.  Check out the repo or demo for more info!</p>
-            <a class="btn repo-link" href="http://www.github.com/ychoy/wehuddle" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
-            <a class="btn deploy-link" href="http://wehuddle.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> demo</a>
-          </div>
+    <div class="project-panel clearfix">
+      <h3 class="sub-head-alt">projects</h3>
+      <div id="page-two" class="scrollspy clearfix">
+        <div class="project-one">
+          <img src="./styles/imgs/fgw.png" alt="p01">
+          <h5>FreeGoldWatch</h5>
+          <p>A prototype website for my favorite pinball arcade, tracks current pinball machines at the shop and gathers social data.  Attempts to maintain the design asethetic of <a class="ye-old-fgw" href="http://www.freegoldwatch.com" target="_blank">the business's current website</a>. Built in Rails.  Check out the repo or demo for more info!</p>
+          <a class="btn repo-link" href="http://www.github.com/wakaspar/FreeGoldWatch" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+          <a class="btn deploy-link" href="http://freegoldwatch.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> demo</a>
+          <hr class="clearfix">
         </div>
-        <a class="btn back-link" href="#section-one"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
+        <div class="project-two">
+          <img src="./styles/imgs/fgs.png" alt="p02">
+          <h5>FreeGoldScores</h5>
+          <p>A simple dashboard that allows users to enter their high scores at any pinball machine currently on the floor at FreeGoldWatch, through interactions with the PinballMap.com API.  Built with AngularJS and Express.  Currently wresteling with an auth issue.  Check out the repo or demo for more info!</p>
+          <a class="btn repo-link" href="http://www.github.com/wakaspar/freegoldscores" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+          <a class="btn deploy-link" href="http://freegoldscores.bitballoon.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> demo</a>
+          <hr class="clearfix">
+        </div>
+        <div class="project-three">
+          <img src="./styles/imgs/weH.png" alt="p03">
+          <h5>WeHuddle</h5>
+          <p>A real-time chat application built with a three-developer team, this project was an attempt at a Slack clone.  Built in Rails 5 using Action Cable.  I plan on rebuilding the front-end soon to make it cat-themed.  Check out the repo or demo for more info!</p>
+          <a class="btn repo-link" href="http://www.github.com/ychoy/wehuddle" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> repo</a>
+          <a class="btn deploy-link" href="http://wehuddle.herokuapp.com" target="_blank"><i class="fa fa-window-restore" aria-hidden="true"></i> demo</a>
+        </div>
       </div>
-      <div class="parallax artwork-pattern"></div>
+      <a class="btn back-link" href="#section-one"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
     </div>
-
-
-    <!-- Section Two - empty -->
-    <div class="section"></div>
 
 
     <!-- Container Three - Gardening -->
-    <div class="parallax-container">
-      <div class="panel container">
-        <h4 class="sub-head">Gardening</h4>
-        <div id="page-three" class="scrollspy">
-          <p class="flow-text">Before I started learning to code, I worked in agriculture.</p>
-          <div class="farm-panel">
-            <a href="./styles/imgs/garden1.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden1_thumb.jpeg"></a>
-            <a href="./styles/imgs/garden2.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden2_thumb.jpeg"></a>
-            <a href="./styles/imgs/garden3.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden3_thumb.jpeg"></a>
-            <a href="./styles/imgs/garden4.jpg" target="_blank"><img class="farm" src="./styles/imgs/garden4_thumb.jpeg"></a>
-          </div>
-          <p>(I love nature)</p>
+    <div class="container clearfix">
+      <h3 class="sub-head">gardening</h3>
+      <div class="scrollspy">
+        <p class="flow-text center">Before I started coding, I used to work in agriculture.  I still love to garden.</p>
+        <div id="page-three" class="farm-panel row">
+          <a href="./styles/imgs/garden1.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden1_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden2.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden2_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden3.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden3_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden4.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden4_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden5.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden5_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden6.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden6_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden7.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden7_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden8.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden8_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden9.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden9_thumb.jpeg"></a>
+          <a href="./styles/imgs/garden10.jpg"><img class="garden-pics col s11 m5 l2" src="./styles/imgs/garden10_thumb.jpeg"></a>
         </div>
-        <a class="btn back-link" href="#page-two"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
       </div>
-      <div class="parallax"><img class="page-bg" src="./styles/imgs/aeonium_sm.jpg" alt="bg2"></div>
-    </div>
+      <a class="btn garden-back-link" href="#section-one"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
 
+      <!-- Modal Trigger -->
+      <!-- <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a> -->
 
-    <!-- Section Three - empty -->
-    <div class="section"></div>
-
-    <!-- Container Four - Artwork -->
-    <div class="parallax-container">
-      <div class="panel container">
-        <h4 class="sub-head">Art</h4>
-        <div id="page-four" class="scrollspy">
-          <p class="flow-text">I have an art history degree and I'm an avid illustrator.  Here are some doodles:</p>
-          <div class="art-panel">
-            <a href="./styles/imgs/art1.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art1_thumb.jpeg"></a>
-            <a href="./styles/imgs/art2.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art2_thumb.jpeg"></a>
-            <a href="./styles/imgs/art3.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art3_thumb.jpeg"></a>
-            <a href="./styles/imgs/art4.jpg" target="_blank"><img class="artwork" src="./styles/imgs/art4_thumb.jpeg"></a>
-          </div>
-          <p>(I draw a lot of plants)</p>
+      <!-- Modal Structure -->
+      <div id="garden_modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <img src="${}" alt="">
         </div>
-        <a class="btn back-link" href="#page-three"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
+        <div class="modal-footer">
+          <!-- <span class="modal-action modal-close waves-effect waves-green" onclick="document.getElementById('myModal').style.display='none'">&times;</span> -->
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">close</a>
+        </div>
       </div>
-      <div class="parallax artwork-pattern"></div>
-    </div>
 
-
-
-    <!-- Section Four - Contact Info -->
-    <div  id="section-four" class="section container scrollspy">
-      <h4>Contact Me</h4>
-      <p class="flow-text">I love meeting new people, touch/click below to...</p>
-      <div class="contact-list">
-        <a class="contact-link" href="mailto:wakaspar@gmail.com">
-          <i class="fa fa-envelope fa-4x"></i>
-          <p>hit my inbox</p>
-        </a>
-        <a class="contact-link" href="https://drive.google.com/file/d/0B4_2t9JACINLNzU5RVFLY3Y2M0E/view?usp=sharing" target="_blank">
-          <i class="fa fa-file-text fa-4x"></i>
-          <p>dl my resume</p>
-        </a>
-        <a class="contact-link" href="https://www.github.com/wakaspar" target="_blank">
-          <i class="fa fa-github-square fa-4x"></i>
-          <p>lurk my github</p>
-        </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/wakaspar/" target="_blank">
-          <i class="fa fa-linkedin-square fa-4x"></i>
-          <p>connect on linkedin</p>
-        </a>
-      </div>
     </div>
 
 
@@ -190,14 +153,6 @@
     <!-- Footer - position fixed -->
     <div class="page-footer">
       <div class="footer-info">
-        <div class="navigator">
-          <ul class="table-of-contents">
-            <li><a href="#page-two">Code</a></li>
-            <li><a href="#page-three">Cultivate</a></li>
-            <li><a class="activator" href="#page-four">Create</a></li>
-            <li><a href="#section-four">Contact</a></li>
-          </ul>
-        </div>
         <div class="dev-info">
           <p>Will Kaspar</p>
           <p class="every-other-line">Full Stack Web Developer</p>
@@ -205,14 +160,26 @@
           <p class="every-other-line">MMXVII</p>
         </div>
         <div class="footer-icons hide-on-small-only">
-          <a href="mailto:wakaspar@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.github.com/wakaspar"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.linkedin.com/in/wakaspar/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/willkaspar"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-          <a href="https://www.instagram.com/kasparthefriendlyghost/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a href="https://docs.google.com/document/d/11uEH5D6_R5VWgwZk7ZMtciZnzNjfUxPGyH0NgI-I8nU/edit?usp=sharing" target="_blank"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a>
+          <a href="mailto:wakaspar@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.github.com/wakaspar" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/wakaspar/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/willkaspar" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/kasparthefriendlyghost/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
 
   </body>
 </html>
+
+
+<!-- Navigator Ghost Code -->
+<!-- <div class="navigator">
+  <ul class="table-of-contents">
+    <li><a href="#page-two">Code</a></li>
+    <li><a href="#page-three">Cultivate</a></li>
+    <li><a class="activator" href="#page-four">Create</a></li>
+    <li><a href="#section-four">Contact</a></li>
+  </ul>
+</div> -->
