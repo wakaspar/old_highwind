@@ -4,7 +4,7 @@ console.log('app.js linked');
 $(document).ready(function(){
 
   $('.first-bg').hide();
-  $('.first-bg').fadeIn(3000, function(e){
+  $('.first-bg').fadeIn(2000, function(e){
     $('.arrow').fadeIn(1000);
     $('.arrow').removeClass('hide');
   });
