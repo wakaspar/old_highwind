@@ -16,6 +16,18 @@ body {
   z-index: 3;
 }
 
+.bg-pattern-2 {
+  background: url('./imgs/simple_dashed.png');
+  width: 100%;
+  height: 100%;
+}
+
+.bg-pattern-1 {
+  background: url('./imgs/moulin.png');
+  width: 100%;
+  height: 100%;
+}
+
 .header-leaf {
   color: #51ad51;
 }
@@ -38,7 +50,7 @@ body {
 
 .arrow {
   position: absolute;
-  bottom: 26%;
+  bottom: 18%;
   left: 50%;
   margin-left: -20px;
   width: 40px;
