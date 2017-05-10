@@ -16,13 +16,13 @@ $(document).ready(function(){
 
   var options = [
     {selector: '#page-one', offset: 50, callback: function(el) {
-      Materialize.toast("Welcome to Will Kaspar's personal website!", 2500 );
+      Materialize.toast("Welcome to my website! Scroll down to continue.", 2000 );
     } },
-    {selector: '#page-five', offset: 715, callback: function(el) {
-      Materialize.toast("Thank you for visiting. The footer icons provide more info", 2500 );
+    {selector: '#page-five', offset: 300, callback: function(el) {
+      Materialize.toast("Thank you for visiting.", 3000 );
+      Materialize.toast("Footer icons below provide additional contact information.", 5000 );
     } }
   ];
   Materialize.scrollFire(options);
-
 
 }); // closes document on ready
