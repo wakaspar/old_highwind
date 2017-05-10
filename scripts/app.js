@@ -20,7 +20,7 @@ $(document).ready(function(){
     } },
     {selector: '#page-five', offset: 300, callback: function(el) {
       Materialize.toast("Thank you for visiting.", 3000 );
-      Materialize.toast("Footer icons below provide additional contact information.", 5000 );
+      Materialize.toast("The icons below provide additional contact information.", 5000 );
     } }
   ];
   Materialize.scrollFire(options);
