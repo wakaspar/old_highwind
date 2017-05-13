@@ -77,6 +77,9 @@ body {
   width: 100%;
 }
 
+.materialboxed {
+  overflow: hidden;
+}
 
 .big-container {
   height: 100vh;
@@ -231,9 +234,10 @@ hr {
 }
 
 .garden-pics {
+  right: 100px;
   object-fit: cover;
-  height: 100px;
-  width: 100px;
+  height: 8em;
+  width: 20em;
   margin: 0.5%;
 }
 
