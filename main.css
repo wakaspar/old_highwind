@@ -1,0 +1,121 @@
+* {
+  margin: 0em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+header {
+  top: 0px;
+  z-index: 3;
+  width: 100vw;
+  display: block;
+  position: fixed;
+  background-color: #161616;
+  padding: 0% 2%;
+}
+
+/* Removes Default Semantic UI Menu Styling */
+#menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+#menu a {
+  color: darkgrey;
+}
+
+.logo h1 {
+  font-family: 'Krona One';
+  font-weight: 100;
+  margin: 0em;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+
+/*  Desktop Menu */
+.ui.menu {
+  background-color: none;
+}
+
+/* Mobile Nav Overlay & CSS */
+.right.menu {
+  padding-right: 1.5%;
+}
+.ui.icon.button {
+  background-color: darkgrey;
+}
+
+.large.bars.icon {
+  color: #161616;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(255,255,255,0.75);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-links {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: 5%;
+}
+.overlay a {
+    padding: 1.2%;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #161616;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 2.5%;
+    right: 12%;
+    font-size: 4em;
+}
+
+
+
+/* MEDIA QUERIES */
+/* Change mobile link font-size & 'x' position @ screen size < 450px */
+@media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 2em;
+        top: 15px;
+        right: 35px;
+    }
+}
+/* Toggles between initials & full name based on screen size < */
+@media screen and (min-width: 600px) {
+  .initials {
+    display: none;
+  }
+  .ui.icon.button {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .full-name {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+}
