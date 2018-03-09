@@ -1,11 +1,5 @@
-footer {
-  background: rgba(0,0,0,0.5);
-  text-align: center;
-}
-
 #home {
   top: 200;
-  height: 100vh;
   background-color: darkgreen;
 }
 #bg-two {
@@ -13,16 +7,4 @@ footer {
 }
 #bg-three {
   background-color: green;
-}
-
-.bg-holder {
-  position: static;
-  top: 0;
-  left: 0;
-  height: 50vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #000000;
 }

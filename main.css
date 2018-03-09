@@ -48,7 +48,6 @@ header {
 .ui.icon.button {
   background-color: darkgrey;
 }
-
 .large.bars.icon {
   color: #161616;
 }
@@ -86,6 +85,20 @@ header {
     top: 2.5%;
     right: 12%;
     font-size: 4em;
+}
+
+
+/* Controls Background Behavior */
+.bg-holder {
+  position: static;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000000;
 }
 
 

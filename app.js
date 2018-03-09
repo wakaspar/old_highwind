@@ -7,6 +7,7 @@ var app = angular
   function config($routeProvider, $locationProvider){
     console.log('angular working');
 
+
     $routeProvider
       .when('/', {
         templateUrl: 'templates/home.html',
@@ -29,8 +30,9 @@ var app = angular
         controller: 'ContactController'
       })
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+
+      $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+      });
   }
