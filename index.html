@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="highwind">
+<html ng-app="Highwind">
 
   <head>
     <meta charset="utf-8">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="ui.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script src="controllers/HomeController.js"></script>
     <!-- External Fonts & Semantic UI CDNs -->
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Mina" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
@@ -49,21 +50,19 @@
       </div>
     </header>
 
-      <div id="home" class="bg-holder">
-
-      </div>
+      <div id="home" class="bg-holder"></div>
       <div class="content-box">
         <h6>hello</h6>
       </div>
-      <div id="bg-two" class="bg-holder">
 
-      </div>
+      <!-- Angular Viewport -->
+      <div ng-view></div>
+
+      <div id="bg-two" class="bg-holder"></div>
       <div class="content-box">
         <h6>hello again</h6>
       </div>
-      <div id="bg-three" class="bg-holder">
-
-      </div>
+      <div id="bg-three" class="bg-holder"></div>
 
       <footer>
         <p>wk c 2018</p>
