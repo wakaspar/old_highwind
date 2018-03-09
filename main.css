@@ -25,11 +25,9 @@ footer {
   border: none;
   box-shadow: none;
 }
-
 #menu a {
   color: darkgrey;
 }
-
 #home {
   top: 200;
   height: 100vh;
@@ -45,8 +43,12 @@ footer {
 .logo h1 {
   font-family: 'Krona One';
   font-weight: 100;
-  color: darkgrey;
   margin: 0em;
+}
+
+.logo h1 a {
+  text-decoration: none;
+  color: darkgrey;
 }
 
 .bg-holder {
