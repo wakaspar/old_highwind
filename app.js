@@ -12,6 +12,22 @@ var app = angular
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
       })
+      .when('/portfolio', {
+        templateUrl: 'templates/portfolio.html',
+        controller: 'PortfolioController'
+      })
+      .when('/art', {
+        templateUrl: 'templates/art.html',
+        controller: 'ArtController'
+      })
+      .when('/about', {
+        templateUrl: 'templates/about.html',
+        controller: 'AboutController'
+      })
+      .when('/contact', {
+        templateUrl: 'templates/contact.html',
+        controller: 'ContactController'
+      })
 
     $locationProvider.html5Mode({
       enabled: true,
