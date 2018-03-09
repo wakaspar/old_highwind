@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="highwind">
+
   <head>
     <meta charset="utf-8">
     <!-- jQuery & Angular CDNs -->
@@ -9,12 +10,14 @@
     <!-- Locally Hosted Files -->
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="ui.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <!-- External Fonts & Semantic UI CDNs -->
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Mina" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
     <title>wk | highwind</title>
   </head>
+
   <body>
     <header>
       <div class="ui text menu">
@@ -22,19 +25,26 @@
           <h1 class="full-name">Will Kaspar</h1>
           <h1 class="initials">wk.</h1>
         </div>
+
         <div class="right menu">
           <div class="ui icon button" onclick="openNav()">
             <i class="large bars icon"></i>
           </div>
+          <div id="nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-links">
+              <a href="#">Portfolio</a>
+              <a href="#">Art</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="nav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#">Portfolio</a>
-          <a href="#">Art</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+        <div id="menu" class="ui menu">
+          <a class="item" href="#">Portfolio</a>
+          <a class="item" href="#">Art</a>
+          <a class="item" href="#">About</a>
+          <a class="item" href="#">Contact</a>
         </div>
       </div>
     </header>

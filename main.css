@@ -19,8 +19,15 @@ footer {
   text-align: center;
 }
 
+/* Removes Default Semantic UI Menu Styling */
 #menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
 
+#menu a {
+  color: darkgrey;
 }
 
 #home {
@@ -42,19 +49,6 @@ footer {
   margin: 0em;
 }
 
-.right.menu {
-  padding-right: 1.5%;
-}
-
-.ui.icon.button {
-  background-color: darkgrey;
-}
-
-.large.bars.icon {
-  color: #161616;
-}
-
-
 .bg-holder {
   position: static;
   top: 0;
@@ -68,7 +62,22 @@ footer {
 }
 
 
-/* Mobile Nav Overlay */
+/*  Desktop Menu */
+.ui.menu {
+  background-color: none;
+}
+
+/* Mobile Nav Overlay & CSS */
+.right.menu {
+  padding-right: 1.5%;
+}
+.ui.icon.button {
+  background-color: darkgrey;
+}
+
+.large.bars.icon {
+  color: #161616;
+}
 .overlay {
   height: 100%;
   width: 0;
@@ -80,15 +89,13 @@ footer {
   overflow-x: hidden;
   transition: 0.5s;
 }
-
-.overlay-content {
+.overlay-links {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: left;
     margin-top: 5%;
 }
-
 .overlay a {
     padding: 1.2%;
     text-decoration: none;
@@ -97,38 +104,44 @@ footer {
     display: block;
     transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #161616;
 }
-
-/* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: 15px;
-    right: 90px;
-    font-size: 60px;
+    top: 2.5%;
+    right: 12%;
+    font-size: 4em;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+
+/* MEDIA QUERIES */
+/* Change mobile link font-size & 'x' position @ screen size < 450px */
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {
+      font-size: 20px
+    }
     .overlay .closebtn {
-        font-size: 40px;
+        font-size: 2em;
         top: 15px;
         right: 35px;
     }
 }
-
-/* Toggles between initials & full name based on screen size */
-@media (min-width: 450px) {
+/* Toggles between initials & full name based on screen size < */
+@media screen and (min-width: 600px) {
   .initials {
     display: none;
   }
+  .ui.icon.button {
+    display: none;
+  }
 }
-@media (max-width: 449px) {
+@media screen and (max-width: 599px) {
   .full-name {
+    display: none;
+  }
+  #menu {
     display: none;
   }
 }

@@ -1,7 +1,7 @@
-console.log('sanity check');
+/* NOTE: User Interface JavaScript: This file contains code that controls
+user interface, such as the dropdown menu & jQuery. */
 
-
-/* Navigation controls */
+/* Navigation Controls */
 function openNav() {
   document.getElementById("nav").style.width = "100vw";
 }
