@@ -9,3 +9,11 @@
   background-color: darkorange;
   height: 100vh;
 }
+
+.light-panel {
+  background-color: grey;
+}
+
+.dark-panel {
+  background-color: darkgrey;
+}
