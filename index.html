@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <!-- Locally Hosted Files -->
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="ui.js"></script>
     <!-- External Fonts & Semantic UI CDNs -->
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Mina" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
@@ -22,17 +22,21 @@
           <h1 class="full-name">Will Kaspar</h1>
           <h1 class="initials">wk.</h1>
         </div>
-
         <div class="right menu">
-          <div class="ui dropdown item">
-            <div class="ui icon button" style="background-color:grey;">
-              <i class="large bars icon" style="color:#161616"></i>
-            </div>
+          <div class="ui icon button" onclick="openNav()">
+            <i class="large bars icon"></i>
           </div>
         </div>
-
       </div>
-
+      <div id="nav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Portfolio</a>
+          <a href="#">Art</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
     </header>
 
       <div id="home" class="bg-holder">
