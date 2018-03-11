@@ -17,8 +17,9 @@
     <script src="controllers/ArtController.js"></script>
     <script src="controllers/AboutController.js"></script>
     <script src="controllers/ContactController.js"></script>
-    <!-- External Fonts & Semantic UI CDNs -->
-    <link href="https://fonts.googleapis.com/css?family=Krona+One|Mina" rel="stylesheet">
+    <!-- External Fonts, DevIcons, & Semantic UI CDNs -->
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Mina|Iceland" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
     <title>wk | highwind</title>
@@ -28,7 +29,7 @@
   <body>
     <header>
       <div class="ui text menu">
-        <div class="ui header item logo">
+        <div class="item logo">
           <h1 class="full-name"><a href="/">Will Kaspar</a></h1>
           <h1 class="initials"><a href="/">wk.</a></h1>
         </div>
@@ -41,16 +42,16 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-links">
               <a onclick="closeNav()" href="/portfolio">Portfolio</a>
-              <a onclick="closeNav()" href="/art">Art</a>
               <a onclick="closeNav()" href="/about">About</a>
+              <a onclick="closeNav()" href="/art">Art</a>
               <a onclick="closeNav()" href="/contact">Contact</a>
             </div>
           </div>
         </div>
         <div id="menu" class="ui menu">
           <a class="item" href="/portfolio">Portfolio</a>
-          <a class="item" href="/art">Art</a>
           <a class="item" href="/about">About</a>
+          <a class="item" href="/art">Art</a>
           <a class="item" href="/contact">Contact</a>
         </div>
       </div>

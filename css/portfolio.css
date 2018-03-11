@@ -1,6 +1,8 @@
 #home {
   top: 200;
-  background-color: coral;
+  background-image: url('../images/fancy-pants.jpg');
+  background-size: auto;
+  background-repeat: repeat;
 }
 #bg-two {
   background-color: orange;
@@ -8,6 +10,10 @@
 #bg-three {
   background-color: darkorange;
   height: 100vh;
+}
+.p-links {
+  text-decoration: underline;
+  color: black;
 }
 
 .light-panel {

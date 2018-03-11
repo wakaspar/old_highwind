@@ -9,3 +9,12 @@
 #bg-three {
   background-color: grey;
 }
+.consult-menu a {
+  width: 100%;
+}
+.consult {
+  padding: 2%;
+}
+.consult-panel {
+  /*background: #f99e00;*/
+}

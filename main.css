@@ -4,6 +4,11 @@
   -moz-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: underline;
+  color: black;
+}
+
 header {
   top: 0px;
   z-index: 3;
@@ -25,8 +30,9 @@ header {
 }
 
 .logo h1 {
-  font-family: 'Krona One';
-  font-weight: 100;
+  font-family: 'Mina', cursive;
+  font-weight: 150;
+  font-weight: 500;
   margin: 0em;
 }
 
@@ -99,6 +105,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #000000;
+  background-attachment: fixed;
 }
 
 
