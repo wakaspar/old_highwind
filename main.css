@@ -15,7 +15,7 @@ header {
   width: 100vw;
   display: block;
   position: fixed;
-  background-color: #161616;
+  background-color: #ffffff;
   padding: 0% 2%;
 }
 
@@ -26,7 +26,7 @@ header {
   box-shadow: none;
 }
 #menu a {
-  color: darkgrey;
+  color: #161616;
 }
 
 .logo h1 {
@@ -38,7 +38,7 @@ header {
 
 .logo h1 a {
   text-decoration: none;
-  color: darkgrey;
+  color: #161616;
 }
 
 
@@ -52,10 +52,10 @@ header {
   padding-right: 1.5%;
 }
 .ui.icon.button {
-  background-color: darkgrey;
+  background-color: #161616;
 }
 .large.bars.icon {
-  color: #161616;
+  color: #ffffff;
 }
 .overlay {
   height: 100%;
@@ -91,6 +91,12 @@ header {
     top: 2.5%;
     right: 12%;
     font-size: 4em;
+}
+
+
+/* Gives padding to all content boxes */
+.content-box {
+  padding: 2%;
 }
 
 

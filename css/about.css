@@ -1,16 +1,19 @@
 #home {
+  background-color: darkgrey;
+  background-image: url('../images/hw-bg-7.2.svg');
   top: 200;
-  background-color: darkgreen;
 }
 #bg-two {
-  background-color: lightgreen;
+  background-color: black;
+  background-image: url('../images/hw-bg-8.05.svg');
 }
 #bg-three {
-  background-color: green;
+  background-color: darkgrey;
+  background-image: url('../images/hw-bg-7.2.svg');
 }
 
 .stack-panel {
-  background: grey;
+  background: #e1e1e1;
   padding: 4%;
 }
 

@@ -2,15 +2,30 @@
   top: 200;
   height: 100vh;
   background-color: black;
+  background-image: url('../images/hw-bg-6.65.svg');
+  transform: scaleX(-1);
 }
 #bg-two {
-  background-color: darkgrey;
+  top: 200;
+  background-color: black;
+  background-image: url('../images/hw-bg-8.36.svg');
 }
 #bg-three {
-  background-color: grey;
+  background-color: black;
+  background-image: url('../images/hw-bg-6.65.svg');
 }
+.greeting {
+  padding: 0% 5%;
+}
+.content-box {
+  /*background-color: darkgrey;*/
+}
+.content-box h1 {
+  /*font-family: 'Mina', cursive;*/
+}
+
 .consult-menu a {
-  width: 100%;
+  width: 60%;
 }
 .consult {
   padding: 2%;
