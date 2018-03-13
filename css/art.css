@@ -1,9 +1,9 @@
 #home {
   top: 200;
-  background-color: darkred;
-  /*background-image: url('../images/hw-bg-3.4.svg');*/
+  background-color: darkgrey;
+  background-image: url('../images/hw-bg-2.3.svg');
 }
 #bg-two {
-  background-color: red;
-  /*background-image: url('../images/hw-bg-3.4.svg');*/
+  background-color: grey;
+  background-image: url('../images/hw-bg-2.3.svg');
 }

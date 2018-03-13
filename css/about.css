@@ -5,11 +5,20 @@
 }
 #bg-two {
   background-color: black;
-  background-image: url('../images/hw-bg-8.05.svg');
+  background-image: url('../images/hw-bg-9.05.svg');
 }
 #bg-three {
   background-color: darkgrey;
   background-image: url('../images/hw-bg-7.2.svg');
+}
+
+img {
+  border: 2px solid black;
+}
+
+.first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .stack-panel {

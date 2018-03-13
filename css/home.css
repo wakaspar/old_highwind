@@ -17,11 +17,12 @@
 .greeting {
   padding: 0% 5%;
 }
-.content-box {
-  /*background-color: darkgrey;*/
+
+.featured-project {
+  background: #e1e1e1;
 }
-.content-box h1 {
-  /*font-family: 'Mina', cursive;*/
+.featured-project img {
+  border: 2px solid black;
 }
 
 .consult-menu a {
