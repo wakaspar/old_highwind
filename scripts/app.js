@@ -7,7 +7,6 @@ var app = angular
   function config($routeProvider, $locationProvider){
     console.log('angular working');
 
-
     $routeProvider
       .when('/', {
         templateUrl: 'templates/home.html',

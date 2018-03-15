@@ -5,5 +5,4 @@ angular
 // ArtController.$inject = ['$http'];
 function ArtController(){
   console.log('ArtController works!');
-  var vm = this;
 }

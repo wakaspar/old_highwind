@@ -5,6 +5,7 @@
   transform: scaleX(-1);
 }
 #bg-two {
+  height: 50vh;
   background-image: url('../images/books-sm.jpg');
 }
 #bg-three {
