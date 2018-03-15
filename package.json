@@ -1,6 +1,10 @@
 {
   "name": "highwind",
   "version": "1.0.0",
+  "engines": {
+    "node": "7.4.0",
+    "npm": "4.0.5"
+  },
   "description": "",
   "main": "server.js",
   "dependencies": {
