@@ -1,14 +1,18 @@
+/* NOTE: Main.css: Holds CSS classes & definitions for index.html & any child pages */
+
+/* Catch-all for any default margins */
 * {
   margin: 0em;
-  /*-webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;*/
 }
 
+/* Attempts to set all anchors to look the same */
+/* (TODO:not sure this is working */
 a {
   text-decoration: underline;
-  color: black;
+  color: #000000;
 }
 
+/* Builds site header */
 header {
   top: 0px;
   z-index: 3;
@@ -19,91 +23,40 @@ header {
   padding: 0% 2%;
 }
 
-/* Removes Default Semantic UI Menu Styling */
+/* Removes some default Semantic UI menu styling */
 #menu {
   background: none;
   border: none;
   box-shadow: none;
 }
 #menu a {
-  color: #161616;
+  color: #000000;
 }
 
+/* Builds site header logo */
 .logo h1 {
   font-family: 'Mina', cursive;
   font-weight: 150;
   font-weight: 500;
   margin: 0em;
 }
-
 .logo h1 a {
   text-decoration: none;
-  color: #161616;
+  color: #000000;
 }
 
-
-/*  Desktop Menu */
-.ui.menu {
-  background-color: none;
-}
-
-/* Mobile Nav Overlay & CSS */
-.right.menu {
-  padding-right: 1.5%;
-}
-.ui.icon.button {
-  background-color: #161616;
-}
-.large.bars.icon {
-  color: #ffffff;
-}
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: rgba(255,255,255,0.75);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-.overlay-links {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: left;
-    margin-top: 5%;
-}
-.overlay a {
-    padding: 1.2%;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-.overlay a:hover, .overlay a:focus {
-    color: #161616;
-}
-.overlay .closebtn {
-    position: absolute;
-    top: 2.5%;
-    right: 12%;
-    font-size: 4em;
-}
-
+/* Builds custom content break */
 .my-divider {
   height: 10px;
   width: 100vw;
-  background-color: black;
+  background-color: #000000;
 }
 
-/* Gives padding to all content boxes */
+/* Gives padding where needed */
+/* TODO: Name this soemthing else, this isn't a good name */
 .content-box {
   padding: 2%;
 }
-
 
 /* Controls Default Background Behavior */
 .bg-holder {
@@ -120,6 +73,54 @@ header {
 }
 
 
+/* MOBILE CSS */
+/* Keeps hamburger menu off the edge of the screen */
+.right.menu {
+  padding-right: 1.5%;
+}
+/* Hamburger menu styling */
+.ui.icon.button {
+  background-color: #000000;
+}
+.large.bars.icon {
+  color: #ffffff;
+}
+/* Mobile overlay styling */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-links {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+    margin-top: 5%;
+}
+.overlay a {
+    padding: 1.2%;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #ff7f50;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 2.5%;
+    right: 12%;
+    font-size: 4em;
+}
 
 /* MEDIA QUERIES */
 /* Change mobile link font-size & 'x' position @ screen size < 450px */
@@ -133,7 +134,7 @@ header {
         right: 35px;
     }
 }
-/* Toggles between initials & full name based on screen size < */
+/* Toggles between initials & full name if screen size < 600px */
 @media screen and (min-width: 600px) {
   .ui.icon.button {
     display: none;
@@ -148,5 +149,11 @@ header {
   }
   .full-name {
     display: none;
+  }
+}
+/* Fixes .bg-holder for tablet screens */
+/* TODO: Currently diagnosing problem, this is just a placeholder */
+@media screen and (max-width: 900px) {
+  .bg-holder {
   }
 }

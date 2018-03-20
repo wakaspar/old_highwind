@@ -1,34 +1,36 @@
+/* NOTE: Home.css: Holds CSS classes & definitions for templates/home.html */
+
+/* Page-specific background settings */
 #home {
   top: 200;
   height: 100vh;
-  background-color: black;
+  background-color: #000000;
   background-image: url('../images/hw-bg-6.65.svg');
   transform: scaleX(-1);
 }
 #bg-two {
   top: 200;
-  background-color: black;
-  background-image: url('../images/hw-bg-8.36.svg');
-}
-#bg-three {
-  background-color: black;
-  background-image: url('../images/hw-bg-6.65.svg');
+  background-color: #000000;
+  background-image: url('../images/hw-bg-8.34.svg');
 }
 
+/* Quicklink anchors */
 .quicklink {
   text-decoration: underline;
-  color: black;
+  color: #000000;
 }
 
+/* Gives padding to 'welcome' message */
 .greeting {
   padding: 0% 5%;
 }
+
 
 .featured-project {
   background: #e1e1e1;
 }
 .featured-project img {
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
 .consult a {
@@ -38,7 +40,7 @@
   padding: 1% 2%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #home {
     height:50vh;
   }
