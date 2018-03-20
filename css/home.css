@@ -1,8 +1,3 @@
-.quicklink {
-  text-decoration: underline;
-  color: black;
-}
-
 #home {
   top: 200;
   height: 100vh;
@@ -19,6 +14,12 @@
   background-color: black;
   background-image: url('../images/hw-bg-6.65.svg');
 }
+
+.quicklink {
+  text-decoration: underline;
+  color: black;
+}
+
 .greeting {
   padding: 0% 5%;
 }
@@ -30,12 +31,15 @@
   border: 2px solid black;
 }
 
-.consult-menu a {
+.consult a {
   width: 60%;
 }
 .consult {
-  padding: 2%;
+  padding: 1% 2%;
 }
-.consult-panel {
-  /*background: #f99e00;*/
+
+@media screen and (max-width: 600px) {
+  #home {
+    height:50vh;
+  }
 }

@@ -93,6 +93,11 @@ header {
     font-size: 4em;
 }
 
+.my-divider {
+  height: 10px;
+  width: 100vw;
+  background-color: black;
+}
 
 /* Gives padding to all content boxes */
 .content-box {
@@ -100,7 +105,7 @@ header {
 }
 
 
-/* Controls Background Behavior */
+/* Controls Default Background Behavior */
 .bg-holder {
   position: static;
   top: 0;
@@ -130,18 +135,18 @@ header {
 }
 /* Toggles between initials & full name based on screen size < */
 @media screen and (min-width: 600px) {
-  .initials {
+  .ui.icon.button {
     display: none;
   }
-  .ui.icon.button {
+  .initials {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .full-name {
+  #menu {
     display: none;
   }
-  #menu {
+  .full-name {
     display: none;
   }
 }

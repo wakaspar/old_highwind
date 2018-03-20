@@ -9,5 +9,5 @@ app.all('/*', function(req, res, next) {
 });
 
 app.listen(process.env.PORT || 3000, function(){
-  console.log('server now listening @ localhost:3000/');
+  console.log('Highwind airborne and listening @ localhost:3000/');
 });
