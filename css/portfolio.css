@@ -13,6 +13,7 @@ img {
   transform: scaleX(-1);
 }
 #bg-three {
+  background-color: #e1e1e1;
   background-image: url('../images/books-sm.jpg');
 }
 

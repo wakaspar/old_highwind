@@ -9,7 +9,8 @@
   transform: scaleX(-1);*/
 }
 #bg-two {
-  height: 15vh;
+  height: auto; /* Catches & resets .bg-holder's default stylings */
+  min-height: 15vh;
   background-color: #808080;
   /*background-image: url('../images/hw-bg-8.33.svg');*/
 }
