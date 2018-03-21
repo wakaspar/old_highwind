@@ -1,4 +1,13 @@
 /* NOTE: Main.css: Holds CSS classes & definitions for index.html & any child pages */
+/*
+  HTML COLOR KEY:
+    #ffffff = white-panel;
+    #e1e1e1 = light-panel;
+    #9e9e9e = dark-panel;
+    #a9a9a9 = dark grey bg;
+    #808080 = grey bg;
+    #ff7f50 = coral;
+*/
 
 /* Catch-all for any default margins */
 * {
@@ -56,6 +65,17 @@ header {
 /* TODO: Name this soemthing else, this isn't a good name */
 .content-box {
   padding: 2%;
+}
+
+/* Define white/light/dark backgrounds for content panels */
+.white-panel {
+  background-color: #ffffff;
+}
+.light-panel {
+  background-color: #e1e1e1;
+}
+.dark-panel {
+  background-color: #9e9e9e;
 }
 
 /* Controls Default Background Behavior */

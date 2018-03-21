@@ -1,5 +1,10 @@
 /* NOTE: Home.css: Holds CSS classes & definitions for templates/home.html */
 
+/* Gives image tags a nice black border */
+img {
+  border: 2px solid black;
+}
+
 /* Page-specific background settings */
 #home {
   top: 200;
@@ -14,25 +19,12 @@
   background-image: url('../images/hw-bg-8.34.svg');
 }
 
-/* Quicklink anchors */
-.quicklink {
-  text-decoration: underline;
-  color: #000000;
-}
-
 /* Gives padding to 'welcome' message */
 .greeting {
   padding: 0% 5%;
 }
 
-
-.featured-project {
-  background: #e1e1e1;
-}
-.featured-project img {
-  border: 2px solid #000000;
-}
-
+/* 'Reach Out' menu styling */
 .consult a {
   width: 60%;
 }
@@ -40,6 +32,14 @@
   padding: 1% 2%;
 }
 
+/* 'Quicklinks' anchors */
+.quicklink {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* MEDIA QUERIES */
+/* Sets #home background height to 50vh on screens < 1000px */
 @media screen and (max-width: 1000px) {
   #home {
     height:50vh;

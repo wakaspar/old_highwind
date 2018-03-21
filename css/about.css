@@ -1,35 +1,35 @@
+/* NOTE: About.css: Holds CSS classes & definitions for templates/about.html */
+
+/* Gives image tags a nice black border */
 img {
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
-#home {
-  background-color: darkgrey;
+/* Page-specific background settings */
+#bg-one {
+  background-color: #a9a9a9;
   background-image: url('../images/hw-bg-7.2.svg');
   top: 200;
 }
 #bg-two {
-  background-color: black;
-  background-image: url('../images/hw-bg-9.05.svg');
-}
-#bg-three {
-  background-color: darkgrey;
+  background-color: #a9a9a9;
   background-image: url('../images/hw-bg-7.2.svg');
 }
 
+/* Augments size/weight of first letter in 'about me' section */
 .first-letter {
   font-size: 1.5em;
   font-weight: bold;
 }
 
+/* Tech Skills styling */
 .stack-panel {
   background: #e1e1e1;
 }
-
 .stack-panel i {
-  color: #161616;
+  color: #000000;
   font-size: 4em;
 }
-
 .stack-list {
   text-align: center;
 }

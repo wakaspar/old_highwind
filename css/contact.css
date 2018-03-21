@@ -1,16 +1,20 @@
+/* NOTE: Contact.css: Holds CSS classes & definitions for templates/contact.html */
+
+/* Page-specific background settings */
 #home {
   top: 200;
   height: 25vh;
-  background-color: darkgrey;
+  background-color: #a9a9a9;
   /*background-image: url('../images/hw-bg-8.33.svg');
   transform: scaleX(-1);*/
 }
 #bg-two {
   height: 15vh;
-  background-color: grey;
+  background-color: #808080;
   /*background-image: url('../images/hw-bg-8.33.svg');*/
 }
 
+/* Fixes temporary email link */
 a {
   text-decoration: underline;
   color: black;

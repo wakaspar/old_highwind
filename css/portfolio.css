@@ -1,43 +1,33 @@
+/* NOTE: Portfolio.css: Holds CSS classes & definitions for templates/portfolio.html */
+
+/* Gives image tags a nice black border */
+img {
+  border: 2px solid #000000;
+}
+
+/* Page-specific background settings */
 #home {
   top: 200;
-  background-color: black;
+  background-color: #000000;
   background-image: url('../images/hw-bg-1.3.svg');
   transform: scaleX(-1);
 }
-/*#bg-two {
-  height: 50vh;
-  background-image: url('../images/books-sm.jpg');
-}*/
 #bg-three {
-  background-color: black;
-  /*background-image: url('../images/hw-bg-1.3.svg');*/
   background-image: url('../images/books-sm.jpg');
 }
 
+/* Project portfolio information styling */
 .p-info {
   font-weight: bold;
 }
-
 .p-links {
   text-decoration: underline;
-  color: black;
-}
-
-img {
-  border: 2px solid black;
-}
-
-.light-panel {
-  background-color: white;
-}
-
-.dark-panel {
-  background-color: #e1e1e1;
+  color: #000000;
 }
 
 
-
-/* The Modal (background) */
+/* LIGHTBOX CSS */
+/* Modal (background overlay) */
 .modal {
   display: none;
   position: fixed;
@@ -50,14 +40,12 @@ img {
   overflow: auto;
   background-color: rgba(255,255,255,0.75);
 }
-
-/* Modal Content */
+/* Modal content */
 .modal-content {
   margin: auto;
   padding-bottom: 20px;
 }
-
-/* The Close Button */
+/* 'Close' button */
 .close {
   color: black;
   position: absolute;
@@ -66,20 +54,13 @@ img {
   font-size: 35px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
-  color: #999;
+  color: #999999;
   text-decoration: none;
   cursor: pointer;
 }
-
-/* Hide the slides by default */
-.my-slides {
-  display: none;
-}
-
-/* Next & previous buttons */
+/* 'Next' & 'previous' button styling */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -95,24 +76,13 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
-
-/* Position the "next button" to the right */
+/* Positions the 'next' button to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
+/* Adds a black, semi-transparent background color on hover */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/*
-img.demo {
-  opacity: 0.6;
-}*/
-
-/*.active,
-.demo:hover {
-  opacity: 1;
-}*/
