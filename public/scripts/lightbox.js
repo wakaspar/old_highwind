@@ -1,3 +1,6 @@
+// Lightbox.js is a super simple custom JavaScript lightbox
+
+// Sanity Check
 console.log('lightbox.js loaded');
 
 // Open the Modal
@@ -23,6 +26,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Builds slidshow - captions currently turned [off]
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("my-slides");

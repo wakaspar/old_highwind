@@ -12,4 +12,20 @@ function closeNav() {
 
 /* jQuery */
 $(document).ready(function(){
+  console.log('jQuery working!');
+
+  $.ajax({
+    method: "GET",
+    url: "api/projects",
+    success: onSuccess(),
+    // error: onError()
+  });
+
+  function onSuccess(res){
+    console.log('good job, ajax: '+res);
+  }
+  function onError(err){
+    console.log("failjax: "+err);
+  }
+
 }); // closes document.ready();

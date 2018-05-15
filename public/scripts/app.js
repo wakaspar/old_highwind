@@ -1,3 +1,4 @@
+/* Angular Application Definition - Highwind */
 var app = angular
   .module('Highwind', ['ngRoute'])
   .config(config);
@@ -5,8 +6,11 @@ var app = angular
   config.$inject = ['$routeProvider', '$locationProvider'];
 
   function config($routeProvider, $locationProvider){
+    /* AngularJS sanity check */
     console.log('angular working');
 
+    /* Defines AngularJS client-side routing.  When the templateUrl is reached
+    by a user, the corresponding controller & template are engaged. */
     $routeProvider
       .when('/', {
         templateUrl: 'templates/home.html',
@@ -29,7 +33,7 @@ var app = angular
         controller: 'ContactController'
       })
 
-
+      /* Enables HTML5 mode */
       $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
